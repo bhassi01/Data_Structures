@@ -27,25 +27,27 @@ public class ArrayImplementation_2 {
 			a[top] = n;
 			System.out.println("Adding value----" + n + "at index" + top);
 		} else
-			System.out.println("Stack is full");}
+			System.out.println("Stack is full");
+	}
 
 	public void peek() {
-		if(!Is_Empty()) {
-		System.out.println(a[top]);}
-		else 
+		if (!Is_Empty()) {
+			System.out.println(a[top]);
+		} else
 			System.out.println("stack is already empty");
 	}
-	public void pop() {
-		if(!Is_Empty()) {
-			
-			System.out.println("Popped element is"+a[top]);
-			--top;}
-		else 
-			System.out.println("Stack is already empty");}
 
-	public static void main(String args[])
-	{
-		ArrayImplementation_2 ar = new  ArrayImplementation_2(5);
+	public void pop() {
+		if (!Is_Empty()) {
+
+			System.out.println("Popped element is" + a[top]);
+			--top;
+		} else
+			System.out.println("Stack is already empty");
+	}
+
+	public static void main(String args[]) {
+		ArrayImplementation_2 ar = new ArrayImplementation_2(5);
 		ar.push(5);
 		ar.push(10);
 		ar.peek();
